@@ -21,8 +21,8 @@ public class GrouperTest {
 
         Map<VowelSetAndLengthPair, Double> actual = grouper.calculateResults("word");
 
-        assertThat( actual.entrySet(), everyItem(isIn(expected.entrySet())));
-        assertThat( expected.entrySet(), everyItem(isIn(actual.entrySet())));
+        assertThat(actual.entrySet(), everyItem(isIn(expected.entrySet())));
+        assertThat(expected.entrySet(), everyItem(isIn(actual.entrySet())));
     }
 
     @Test
@@ -34,8 +34,8 @@ public class GrouperTest {
 
         Map<VowelSetAndLengthPair, Double> actual = grouper.calculateResults("Platon made bamboo boats.");
 
-        assertThat( actual.entrySet(), everyItem(isIn(expected.entrySet())));
-        assertThat( expected.entrySet(), everyItem(isIn(actual.entrySet())));
+        assertThat(actual.entrySet(), everyItem(isIn(expected.entrySet())));
+        assertThat(expected.entrySet(), everyItem(isIn(actual.entrySet())));
     }
 
     @Test
@@ -55,8 +55,7 @@ public class GrouperTest {
                         "Lorem Ipsum is the standard"
         );
 
-//        System.out.println(actual);
-        assertThat( actual.entrySet(), everyItem(isIn(expected.entrySet())));
-        assertThat( expected.entrySet(), everyItem(isIn(actual.entrySet())));
+        assertThat(actual.entrySet(), everyItem(isIn(expected.entrySet())));
+        assertThat(expected.entrySet(), everyItem(isIn(actual.entrySet())));
     }
 }
